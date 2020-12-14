@@ -376,7 +376,7 @@ p {
 
 .socials-link {
   box-sizing: border-box;
-  background-position: center;
+  background-position: center;  
   background-color: var(--background);
   padding: 0;
   border: none;
@@ -390,17 +390,15 @@ p {
 
 .socials-link:hover,
 .socials-link:focus {
-  background-color: var(--accent-color);
+  background-color: var(--accent-color);  
 }
 
 .team-icon {
-  fill: var(--logo-color);
-  background-color: var(--background);
+  fill: var(--logo-color);  
 }
 
 .socials-link:hover .team-icon,
-.socials-link:focus .team-icon {
-  background-color: var(--accent-color);
+.socials-link:focus .team-icon {  
   fill: var(--title-accent);
 }
 
