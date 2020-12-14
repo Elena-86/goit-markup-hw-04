@@ -106,8 +106,15 @@ p {
 
 .hero {
   background-color: var(--background-strong-accent);
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Стилизация блока героя */
 
@@ -244,26 +251,21 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
 .auth-nav .top {
   margin-left: 30px;
 }
 
-.top-icon {
-  fill: var(--primary-text-color);
+.auth-nav .top-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
-.mail-phone:hover .top-icon,
-.mail-phone:focus .top-icon {
-  fill: var(--accent-color);
-}
-
-.mail-phone:hover .link,
-.mail-phone:focus .link {
-  color: var(--accent-color);
-}
-.top .link {
-  margin-left: 10px;
-}
 .type-button {
   font-weight: 500;
   font-size: 16px;
@@ -296,21 +298,6 @@ p {
 .description .item:not(:first-child) {
   margin-left: 30px;
 }
-.icon {
-  margin-bottom: 30px;
-}
-
-.icon .item {
-  color: var(--title-text-color);
-  background: var(--background-sоft-accent);
-
-  border-radius: 4px;
-  margin-left: 30px;
-  max-width: 270px;
-}
-.icon .item:first-child {
-  margin-left: 0px;
-}
 
 .button-review {
   width: 270px;
@@ -319,12 +306,16 @@ p {
   border: transparent;
   border-radius: 4px;
   display: block;
+  margin-bottom: 30px;
 }
 
 .review {
   background-color: var(--background);
   padding-top: 94px;
   padding-bottom: 94px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .description .title {
@@ -346,6 +337,9 @@ p {
 .occupation {
   background-color: var(--background);
   padding-bottom: 94px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .exposition-title {
@@ -375,6 +369,9 @@ p {
   background-color: var(--background-sоft-accent);
   padding-top: 94px;
   padding-bottom: 94px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .socials-link {
@@ -416,7 +413,7 @@ p {
 }
 
 .socials .item:first-child {
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 /* Оформление секции "Наши клиенты" */
@@ -475,7 +472,11 @@ p {
 .our-clients {
   padding-top: 94px;
   padding-bottom: 94px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 .our-clients .title {
   font-weight: 700;
   font-size: 36px;
@@ -619,17 +620,15 @@ address {
 .work-example {
   padding-top: 94px;
   padding-bottom: 94px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .example .item {
   width: 370px;
   margin-left: 30px;
   margin-bottom: 30px;
-}
-
-.example .item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .example .item:nth-child(3n + 1) {
@@ -657,7 +656,7 @@ address {
   margin-bottom: 4px;
 }
 
-.container .example {
+.example {
   display: flex;
   flex-wrap: wrap;
 }
@@ -675,11 +674,23 @@ address {
   letter-spacing: 0.03em;
 }
 
+.example .link {
+  display: block;
+}
+
+.example .link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .contacts-accent {
   background-color: var(--background-strong-accent);
   display: block;
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .current-link {
@@ -695,8 +706,4 @@ address {
 }
 .filter .item:first-child {
   margin-left: 0px;
-}
-
-.mail-phone {
-  align-items: baseline;
 }
